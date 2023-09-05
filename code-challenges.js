@@ -33,6 +33,27 @@ const temperature3 = 212
 // Expected output: "212 is at boiling point"
 
 // Pseudo code:
+// function name: boilingTemp
+// input: numbers, temps 1-3
+// output: string that indicates if the temp is above, below, or at boiling point
+// process: conditional, string interpolation
+
+// const boilingTemp = (temp) => {
+//     if (temp > 212) {
+//         return `${temp} is above boiling point`
+//     } else if (temp === 212) {
+//         return "212 is at boiling point"
+//     } else {
+//         return `${temp} is below boiling point`
+//     }
+// }
+// console.log(boilingTemp(temperature1))
+// // output: 42 is below boiling point
+// console.log(boilingTemp(temperature2))
+// // output: 350 is above boiling point
+// console.log(boilingTemp(temperature3))
+// output: 212 is at boiling point
+
 
 // --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
 
@@ -41,6 +62,14 @@ const padres1998WorldSeriesRuns = [6, 3, 5, 3]
 // Expected output: 9
 
 // Pseudo code:
+// input: arrays
+// output: length of array
+// process: built in method concatation and length
+
+// const arr3 = padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns)
+
+// console.log(arr3.length)
+// output: 9
 
 // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below.
 
@@ -48,6 +77,24 @@ const currentCohort = "Foxtrot 2023"
 // Expected output: "3202 tortxoF"
 
 // Pseudo code:
+// input: string, currentCohort
+// output: string reversed
+// process: built in methods .split, .reverse, and .join
+
+// var cohortArr = currentCohort.split("")
+// console.log(cohortArr)
+// output: 'F', 'o', 'x', 't',
+//   'r', 'o', 't', ' ',
+//   '2', '0', '2', '3'
+// var revArr = cohortArr.reverse()
+// console.log(revArr)
+// output: 
+// '3', '2', '0', '2',
+// ' ', 't', 'o', 'r',
+// 't', 'x', 'o', 'F'
+// var revStr = revArr.join("")
+// console.log(revStr)
+// output: "3202 tortxoF"
 
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
@@ -60,3 +107,11 @@ const givenValue2 = 10
 // Expected output: 8
 
 // Pseudo code:
+// input: number values
+// output: number, last index of given value
+// process: built-in method .lastIndexOf
+
+// console.log(numberOfConnections.lastIndexOf(givenValue1))
+// output: 7
+// console.log(numberOfConnections.lastIndexOf(givenValue2))
+// output: 8
